@@ -3,7 +3,6 @@
     margin: 0;
 	padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 body{
     width: 100%;
@@ -146,38 +145,6 @@ header .toggle{
     text-decoration: none;
 }
 
-/* BACK TO TOP */
-/* bactotop */
-.backtotop{
-    position: fixed;
-    bottom: 2rem;
-    right: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    transition: 0.1s ease-out;
-    z-index: 1000;
-}
-.backtotop span{
-    color: white;
-    transition: 0.1s ease-out;
-    font-size: 2rem;
-}
-.backtotop:hover{
-    background-color:#6D6D6D;
-
-}
-.backtotop:hover span{
-    transform: translateY(-3px);
-}
-html{
-    scroll-behavior: smooth;
-}
-
 /* FOOTER */
 footer{
     background-color: #D9D9D9;
@@ -274,7 +241,7 @@ footer .social a:hover{
     padding: 24px 0;
     text-align: justify;
 }
-.link .title a:hover{
+.link .title:hover{
     text-decoration: underline;
 }
 @media(max-width: 992px){
@@ -458,28 +425,15 @@ footer .social a:hover{
     display: flex;
     overflow-x: auto; 
     overflow-y: hidden;
-    padding-right: 12px;
-    padding-bottom: 24px;
+    padding: 0 12px;
     width: 70vw;
     scroll-behavior: smooth; 
 }
-.duan .gallery::-webkit-scrollbar {
-    height: 12px; 
-}
-.duan .gallery::-webkit-scrollbar-thumb {
-    background-color: black; 
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-}
-.duan .gallery::-webkit-scrollbar-thumb:hover {
-    background-color: #D9D9D9;
-}
-.duan .gallery::-webkit-scrollbar-track {
-    background-color: white; 
-}
+
 .duan .gallery img {
     width: 252px;
     height: 350px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 .duan .gallery .image-item {
@@ -509,6 +463,7 @@ footer .social a:hover{
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 .duan .gallery img:hover {
     transform: scale(1.1);
@@ -542,25 +497,8 @@ footer .social a:hover{
     padding: 5px;
 }
 .film-container .movies .movie-item img{
-    width: 262px;
+    width: 272px;
     height: 350px;
-}
-.film-container a{
-    text-decoration: none;
-}
-.film-container .movie-item .overlay {
-    width: 262px;
-    position: absolute;
-    color: white;
-    text-align: center;
-    opacity: 0;
-    padding: 24px;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: opacity 0.3s ease;
-    bottom: 1%;
-}
-.film-container .movie-item:hover .overlay {
-    opacity: 1;
 }
 .film-container .movies {
     clear: both;
@@ -571,7 +509,6 @@ footer .social a:hover{
 .film-container .movies .movie-item {
     width: 100%;
     box-sizing: border-box;
-    position: relative;
 }
 
 @media (max-width: 992px) {
